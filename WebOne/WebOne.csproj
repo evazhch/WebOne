@@ -177,6 +177,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SysExceptionController.cs" />
     <Compile Include="Controllers\SysLogController.cs" />
+    <Compile Include="Controllers\SysModuleController.cs" />
     <Compile Include="Controllers\SysSampleController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Core\ExtendMvcHtml.cs" />
@@ -570,6 +571,7 @@
     <Folder Include="Models\" />
     <Folder Include="Scripts\easyui\demo\" />
     <Folder Include="Views\Base\" />
+    <Folder Include="Views\SysModule\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

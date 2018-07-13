@@ -122,5 +122,17 @@ namespace WebOne.Controllers
             }
             return true;
         }
+
+        /// <summary>
+        /// 获取当前页或操作访问权限
+        /// </summary>
+        /// <returns>权限列表</returns>
+        public List<permModel> GetPermission()
+        {
+            string filePath = HttpContext.Request.FilePath;
+
+            List<permModel> perm = (List<permModel>)Session[filePath];
+            return perm;
+        }
     }
 }
