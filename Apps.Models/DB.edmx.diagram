@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="145ccb7fdeee4632b7e23abc323daf89" Name="Diagram1">
+        <EntityTypeShape EntityType="AppsDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="AppsDBModel.SysException" Width="1.5" PointX="8.75" PointY="5.75" />
+        <EntityTypeShape EntityType="AppsDBModel.SysLog" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="AppsDBModel.SysModuleOperate" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="AppsDBModel.SysRight" Width="1.5" PointX="6" PointY="2.625" />
+        <EntityTypeShape EntityType="AppsDBModel.SysRightOperate" Width="1.5" PointX="8.25" PointY="2.75" />
+        <EntityTypeShape EntityType="AppsDBModel.SysRole" Width="1.5" PointX="3.75" PointY="7.625" />
+        <EntityTypeShape EntityType="AppsDBModel.SysSample" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="AppsDBModel.SysUser" Width="1.5" PointX="6" PointY="6.125" />
+        <AssociationConnector Association="AppsDBModel.FK_SysRight_SysRole" />
+        <AssociationConnector Association="AppsDBModel.FK_SysRightOperate_SysRight" />
+        <AssociationConnector Association="AppsDBModel.SysRoleSysUser" />
+        <EntityTypeShape EntityType="AppsDBModel.SysModule" Width="1.5" PointX="0.75" PointY="1.75" />
+        <AssociationConnector Association="AppsDBModel.FK_SysModule_SysModule" />
+        <AssociationConnector Association="AppsDBModel.FK_SysModuleOperate_SysModule" />
+        <AssociationConnector Association="AppsDBModel.FK_SysRight_SysModule" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
